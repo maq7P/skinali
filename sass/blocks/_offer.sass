@@ -1,0 +1,149 @@
+.offer
+  padding: 129px 0
+  background-color: #f1f1f1
+  &-block
+    background: #ffffff url('../img/offer/offer-bg.png') no-repeat center right
+    background-size: contain
+    padding: 80px
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
+    margin-top: -230px;
+  &__title
+    color: #000000
+    font-family: 'Proxima Nova Semibold';
+    font-size: 22px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.75px
+  &__subtitle
+    display: block
+    color: #000000
+    font-size: 19px
+    font-weight: 300
+    margin-top: 25px
+    margin-bottom: 48px
+.form
+  &__row
+    display: flex
+    align-items: center
+    max-width: 850px  
+    margin-bottom: 25px
+    &:last-child
+      margin-bottom: 0
+  &__label
+    display: block
+    font-size: 17px
+    margin-bottom: 15px
+  &__group
+    flex-basis: 33.3333333333%
+  &__input
+    width: 100%
+    border-right-width: 0px
+    &_3
+      border-right-width: 1px
+  &__button
+    width: 100%
+    height: 80px
+    padding: 30px
+    color: #ffffff
+    background-color: #507fe1
+    font-size: 16px
+.checkbox
+  &__element
+    display: none
+    &:checked + label:before
+      background-color: #507fe1
+  &__label
+    display: flex 
+    align-items: center
+    margin-right: 40px
+    &:before
+      content: ''
+      width: 30px
+      height: 30px
+      border: 1px solid #dddddd
+      background-color: #ffffff
+      margin-right: 15px
+@media (max-width: 1500px) and (min-width: 1200px)
+  .hero
+    padding-top: 70px
+  .offer
+    &-block
+      margin-top: -290px
+@media (max-width: 1300px)
+  .offer
+    &-block
+      margin-top: -350px
+@media (max-width: 1200px)
+  .offer
+    &-block
+      margin-top: -300px
+      background-position: center right -120px
+@media (max-width: 992px)
+  .offer
+    &-block
+      margin-top: -360px
+@media (max-width: 880px) and (min-width: 756px)
+  .hero
+    &__button
+      margin-top: -30px
+    &__subtitle
+      margin-top: -10px
+@media (max-width: 768px)
+  .offer
+    &-block
+      background: none
+      background-color: #ffffff
+      margin-top: -350px
+      border-radius: 4px
+  .form
+    &__row
+      flex-direction: column
+      &-checkbox
+        flex-direction: row
+    &__group
+      width: 100%
+    &__input
+      margin-bottom: 20px
+      border-right-width: 1px 
+
+@media (max-width: 570px)
+  .offer
+    &__title
+      font-size: 18px
+    &-block
+      border-radius: 4px
+      padding: 40px
+    &__subtitle
+      font-size: 16px
+      max-width: 300px
+
+@media (max-width: 420px)
+  .offer
+    padding-bottom: 50px
+    &__title
+      margin: auto
+      text-align: center
+      max-width: 200px
+      margin-bottom: 20px
+    &-block
+      padding: 30px
+    &__subtitle
+      font-size: 16px
+      max-width: 300px
+      margin-bottom: 28px
+  .form
+    &__label
+      font-size: 14px
+    &__button
+      padding: 15px
+      height: 60px
+      margin-top: 10px
+  .input
+    height: 60px
+    margin-bottom: 10px
+  .checkbox
+    &__label
+      font-size: 14px
+      margin-right: 10px
+  .checkbox__label:before
+    margin-right: 5px

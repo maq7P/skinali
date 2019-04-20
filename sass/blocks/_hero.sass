@@ -3,9 +3,15 @@
   background-repeat: no-repeat
   background-position: center top
   background-size: contain 
+  // background-size: cover
   padding-top: 100px
   padding-bottom: 270px
   margin-top: 80px
+  &-block
+    &__image
+      display: none
+  &__title-1
+    display: none
   &__title
     color: #252525
     font-size: 30px
@@ -23,6 +29,69 @@
     background-color: #507fe1
     padding: 20px 41px
 @media (max-width: 756px)
+  // .hero
+  //   background-size: 100%
+  //   background-position: top left  
   .hero
-    background-size: 100%
-    background-position: top left
+    margin-top: 50px
+    padding-top: 100px
+    background-size: 0%
+    background: #f1f1f1
+    background: url(../img/hero/hero-bg-1.png)
+    &-block
+      &__image
+        // position: absolute
+        // top: 30%
+        // right: 2%
+        display: block 
+        margin-left: auto
+        margin-top: -48px
+        background-color: #e9f95c
+        max-width: 170px  
+        border-radius: 13px
+        text-align: center
+    &__title,&__subtitle
+      display: none
+    &__title-1
+      margin: 0
+      margin-bottom: 5px
+      padding-top: 10px
+      display: block
+      font-size: 13px
+      color: #334a86
+      font-weight: 700
+    &__subtitle-1
+      display: block
+      max-width: 800px
+      color: blue
+      color: #334a86
+      font-size: 15px
+      font-weight: 700
+      padding-bottom: 10px
+    &__button
+      margin: auto
+      margin-top: 150px
+      
+@media (max-width: 1200px)
+  .hero
+    &__title
+      margin-top: -30px
+      font-size: 25px
+    &__subtitle
+      font-size: 26px
+      margin-bottom: 57px
+@media (max-width: 330px)
+  .hero
+    &-block
+      &__image
+        margin-right: -20px
+@media (max-width: 480px)
+  .hero
+    &__button
+      margin-top: 120px
+
+
+
+
+
+
