@@ -1,0 +1,44 @@
+.blog
+  &__heading 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 70px
+  &__title
+    margin: 0
+    color: #000000
+    font-size: 24px
+    font-weight: 400
+    font-family: 'Proxima Nova Semibold'
+  &__link
+    color: #507fe1
+    font-size: 16px
+    font-weight: 400
+    text-decoration: underline
+  &-card
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08)
+  &-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &__card
+      margin-bottom: 20px
+    &__text
+      display: flex
+      color: #000000
+      font-size: 18px
+      font-weight: 300
+      justify-content: center
+      min-height: 80px
+      align-items: center
+    &__image
+      max-height: 200px
+      overflow: hidden
+@media (max-width: 1199px)
+  .blog
+    &-list
+      justify-content: center
+      &__card
+        margin-right: 30px
+        margin-left: 30px
+
