@@ -1,0 +1,79 @@
+.price 
+  &-block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__card
+      margin-bottom: 15px
+  &-card
+    position: relative
+    background-color: #ffffff
+    &__text
+      padding: 20px
+    &__pricetag
+      display: flex
+      justify-content: space-between
+    &__title
+      display: block
+      font-size: 15px
+      line-height: 30px
+    &__text-size
+      font-family: 'Proxima Nova Semibold'
+      font-size: 15px
+      font-weight: 400
+      line-height: 30px
+    &-button
+      background-color: #ffffff
+      position: absolute
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
+      height: 80px
+      bottom: 0
+      left: 0
+      width: 100%
+      z-index: -1
+      text-align: center
+    &__button
+      background-color: #507fe1
+      color: #ffffff
+      font-family: 'Proxima Nova Semibold'
+      font-size: 14px
+      font-weight: 400
+      text-transform: uppercase
+      border: none
+      border: none
+      padding: 24px 55px
+    &:hover
+      .price-card-button
+        z-index: 99
+        bottom: -80px
+@media (max-width: 1199px)
+  .price 
+    &-block 
+      justify-content: center
+      &__card
+        margin: 30px
+        // margin-left: 15px
+        // margin-right: 15px
+@media (max-width: 746px)
+  .price
+    &-block
+      &__card
+        margin: 15px
+
+@media (max-width: 370px)
+  .price
+    &-card
+      &__title
+        font-size: 13px
+      &__text-size
+        font-size: 13px
+      &:hover
+        .price-card-button
+          z-index: 99
+          bottom: -55px
+      &-button
+        height: 70px
+      &__button
+        padding: 20px 45px
+
+
