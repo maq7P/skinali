@@ -1,0 +1,29 @@
+.contacts {
+  background-color: #fafbfc;
+}
+
+.contacts-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts-block__text {
+  font-size: 16px;
+}
+
+.contacts-block__image {
+  display: block;
+  margin: auto;
+}
+
+.contacts-block__link {
+  text-decoration: none;
+  color: #000000;
+}
+/*# sourceMappingURL=contacts.css.map */
