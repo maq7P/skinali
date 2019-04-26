@@ -1450,6 +1450,7 @@ img {
 
 .reviews {
   background-color: #f6f7f9;
+  padding-bottom: 278px;
 }
 
 .reviews-slider {
@@ -1511,7 +1512,8 @@ img {
 
 .offer_last {
   padding: 129px 0;
-  background-color: #f6f7f9;
+  margin-top: -340px;
+  padding-bottom: 0;
 }
 
 .offer_last-block {
@@ -1851,6 +1853,286 @@ img {
   }
   .contacts-block__link {
     font-size: 13px;
+  }
+}
+
+.qestions {
+  background-color: #fafbfc;
+}
+
+.qestions-block {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.qestions-block__title {
+  font-family: 'Proxima Nova Semibold';
+  font-size: 30px;
+  font-weight: 400;
+  margin-right: 50px;
+}
+
+.qestions-block__link {
+  color: #5a8de2;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: #35aad8;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 15px;
+  margin-left: 100px;
+}
+
+.qestions-block__image {
+  position: absolute;
+  max-width: 200px;
+  top: -56px;
+  right: 464px;
+}
+
+@media (max-width: 1199px) {
+  .qestions-block__image {
+    top: -70px;
+    right: 360px;
+  }
+}
+
+@media (max-width: 991px) {
+  .qestions-block__title {
+    font-size: 27px;
+  }
+  .qestions-block__link {
+    font-size: 19px;
+  }
+  .qestions-block__image {
+    top: -70px;
+    right: 243px;
+  }
+}
+
+@media (max-width: 768px) {
+  .qestions-block__title {
+    display: block;
+    margin: 0;
+  }
+  .qestions-block__image {
+    top: 185%;
+    right: 49%;
+  }
+  .qestions-block__link {
+    position: absolute;
+    top: 430%;
+    right: 24%;
+  }
+}
+
+@media (max-width: 700px) {
+  .qestions-block__link {
+    right: 18%;
+  }
+}
+
+@media (max-width: 600px) {
+  .qestions-block__link {
+    right: 11%;
+  }
+}
+
+@media (max-width: 580px) {
+  .qestions-block__title {
+    font-size: 25px;
+  }
+  .qestions-block__link {
+    font-size: 16px;
+    right: 16%;
+    top: 465%;
+  }
+}
+
+@media (max-width: 470px) {
+  .qestions-block__link {
+    right: 11%;
+  }
+}
+
+@media (max-width: 470px) {
+  .qestions-block__link {
+    right: 6%;
+  }
+}
+
+@media (max-width: 380px) {
+  .qestions-block__link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 342px) {
+  .qestions-block__link {
+    font-size: 12px;
+  }
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #262626;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.54px;
+  margin-bottom: 8px;
+}
+
+.footer__subtitle {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 48px;
+}
+
+.footer__copy {
+  color: #767676;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.footer__pay-info {
+  margin: auto;
+}
+
+.footer__pay-info-1, .footer__pay-info-2, .footer__pay-info-3, .footer__pay-info-4 {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.footer__phone {
+  color: #ffffff;
+  font-family: 'Proxima Nova Semibold';
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.footer__email {
+  color: #b4b4b4;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  text-decoration: underline;
+  display: block;
+  text-align: right;
+  margin-bottom: 22px;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.footer-social__link {
+  margin-right: 10px;
+}
+
+.footer-social__link:last-child {
+  margin-right: 0px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 200px;
+  }
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer-social {
+    text-align: center;
+  }
+  .footer__email {
+    text-align: center;
+  }
+  .footer__subtitle {
+    margin-bottom: 20px;
+  }
+  .footer__copy {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .footer__pay-info {
+    margin-bottom: 30px;
+  }
+  .footer__phone {
+    margin-bottom: 10px;
+  }
+  .footer__email {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 390px) {
+  .footer__pay-info {
+    display: block;
+  }
+  .footer__pay-info-1 {
+    width: 54px;
+    height: 14px;
+    margin-left: 75px;
+    margin-bottom: 20px;
+  }
+  .footer__pay-info-2 {
+    width: 54px;
+    height: 19px;
+    margin-right: 65px;
+    margin-bottom: 20px;
+  }
+  .footer__pay-info-3 {
+    width: 52px;
+    height: 32px;
+    margin-left: 30px;
+  }
+  .footer__pay-info-4 {
+    width: 54px;
+    height: 17px;
+  }
+}
+
+@media (max-width: 338px) {
+  .footer__pay-info {
+    display: block;
+  }
+  .footer__pay-info-1, .footer__pay-info-2, .footer__pay-info-3, .footer__pay-info-4 {
+    margin: 0;
+    margin-right: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */
